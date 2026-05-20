@@ -50,14 +50,12 @@
     
     <!-- 학습 목표 명시 규칙 준수 -->
     <div class="info-card">
-        <h3>🎯 Learning Goals</h3>
+        <h3>🎯Learning Goals with BOHYEON Teacher! </h3>
         <p style="margin: 5px 0; font-weight: bold; color: #1b5e20;">Let's review what we learned:</p>
         <ul style="padding-left: 20px; margin: 5px 0; line-height: 1.5;">
             <li><b>Modal Verbs:</b> can, will</li>
             <li><b>Imperative Sentences:</b> 명령문</li>
-            <li><b>Present Tense & Present Progressive:</b> 현재형 및 현재진행형</li>
-            <li><b>Questions:</b> 의문문</li>
-            <li><b>New Expressions:</b> 단원 주요 표현</li>
+            
         </ul>
     </div>
 
@@ -66,7 +64,7 @@
         <h3>🎮 How to Play</h3>
         <ol style="list-style-position: outside;">
             <li>Solve the <b>Quiz</b> to get items.<br>
-                <span class="indent-text">🌱 Get 🌱 or sometimes 🌿 Lucky!</span></li>
+                <span class="indent-text"> Get 🌱 or sometimes 🌿 Lucky!</span></li>
             <li>Merge <b>SAME</b> items to build a house.<br>
                 <span class="indent-text">🌱 + 🌱 → 🌿 → 🌷 → 🌳 → House 🏡</span></li>
         </ol>
@@ -76,7 +74,7 @@
         <h3 style="color: #f57f17;">⚠️ Caution!</h3>
         <p style="margin: 5px 0; font-size: 0.95rem; line-height: 1.4;">
             ❌ 2 Misses = <b>5 seconds Lock & Show Answer!</b><br>
-            📈 <b>AI Level Leveling:</b> 한 번에 맞히면 난이도 Up! 두 번 틀리면 난이도 Down!<br>
+            📈 <b>AI Level Leveling:</b> 나의 수준에 꼭 맞는 문제! <br>
             🏆 Goal: Build <b>two houses</b> to win the game!
         </p>
     </div>
@@ -117,7 +115,7 @@ const quizData = [
     // [하 난이도 - 보기 3개] 25문항
     {q: "명령문 '여기를 봐라.'의 빈칸을 채우세요.\n____ at this.", a: "Look", c: ["Look", "Looking", "Looks"], lv: "하"},
     {q: "부정명령문 '늦지 마라.'의 빈칸을 채우세요.\n____ be late.", a: "Don't", c: ["Don't", "Not", "No"], lv: "하"},
-    {q: "조동사 can의 의미로 가장 알맞은 것은?", a: "~할 수 있다", c: ["~할 수 있다", "~할 것이다", "~해야 한다"], lv: "하"},
+    {q: "조동사 can의 의미로 가장 알맞은 것은?", a: "~할 수 있다", c: ["~할 수 있다", "~할 것이다", "~할 수 없다"], lv: "하"},
     {q: "조동사 will의 의미로 가장 알맞은 것은?", a: "~할 것이다", c: ["~할 것이다", "~할 수 있다", "~하지 마라"], lv: "하"},
     {q: "문장 완성: He can ____ fast.", a: "run", c: ["run", "runs", "running"], lv: "하"},
     {q: "문장 완성: I will ____ you tomorrow.", a: "meet", c: ["meet", "meets", "meeting"], lv: "하"},
@@ -135,9 +133,9 @@ const quizData = [
     {q: "현재진행형 부정: I am ____ watching TV.", a: "not", c: ["not", "don't", "no"], lv: "하"},
     {q: "조동사 부정: They cannot ____ this heavy box.", a: "lift", c: ["lift", "lifts", "lifting"], lv: "하"},
     {q: "조동사 부정: Minho will ____ go to the party.", a: "not", c: ["not", "don't", "isn't"], lv: "하"},
-    {q: "단어: '지구를 보호하다'에서 '보호하다'에 알맞은 단어는?", a: "protect", c: ["protect", "pollute", "destroy"], lv: "하"},
-    {q: "단어: '규칙'을 뜻하는 올바른 영어 단어는?", a: "rule", c: ["rule", "role", "root"], lv: "하"},
-    {q: "단어: '조언, 팁'을 뜻하는 올바른 영어 단어는?", a: "tip", c: ["tip", "top", "tap"], lv: "하"},
+    {q: "단어: '기후 변화'에서 '기후'에 해당하는 단어는?", a: "climate", c: ["climate", "change", "solution"], lv: "하"},
+    {q: "단어: '계단'을 뜻하는 올바른 영어 단어는?", a: "stairs", c: ["stairs", "straw", "cloth"], lv: "하"},
+    {q: "단어: '원인과 결과'에서 '원인'에 해당하는 단어는?", a: "cause", c: ["effect", "trash", "cause"], lv: "하"},
     {q: "현재형: Minji ____ English every day.", a: "studies", c: ["studies", "studys", "study"], lv: "하"},
     {q: "현재진행형 규칙: 'swim'의 -ing 형태로 올바른 것은?", a: "swimming", c: ["swimming", "swiming", "swimmiing"], lv: "하"},
 
@@ -162,7 +160,7 @@ const quizData = [
     {q: "표현: '쓰레기를 버리지 마라'의 올바른 영어 표현은?", a: "Don't throw away trash.", c: ["Don't throw away trash.", "Not throw away trash.", "Throw away no trash."], lv: "중"},
     {q: "단어: '건강한'을 뜻하는 올바른 영어 단어는?", a: "healthy", c: ["healthy", "health", "heal"], lv: "중"},
     {q: "단어: '에너지를 절약하다'에서 '절약하다'에 알맞은 단어는?", a: "save", c: ["save", "safe", "spend"], lv: "중"},
-    {q: "단어: '매일매일의, 일상의'를 뜻하는 단어는?", a: "daily", c: ["daily", "diary", "dairy"], lv: "중"},
+    {q: "단어: '탐험하다'를 뜻하는 단어는?", a: "explore", c: ["post", "explore", "recycle"], lv: "중"},
     {q: "문장 완성: Sujin and I ____ practicing English together.", a: "are", c: ["are", "is", "am"], lv: "중"},
     {q: "현재형 문장: Water ____ at 100 degrees Celsius.", a: "boils", c: ["boils", "boil", "boiling"], lv: "중"},
     {q: "현재진행형 부정: We ____ not taking a break right now.", a: "are", c: ["are", "is", "do"], lv: "중"},
@@ -230,7 +228,7 @@ function openQuiz() {
     const q = filteredQuestions[Math.floor(Math.random() * filteredQuestions.length)];
     
     // 헤더 상태바에 현재 학생 레벨 실시간 표시
-    document.getElementById('system-status').textContent = `학생 레벨: ${currentStudentLevel}`;
+    document.getElementById('system-status').textContent = `현재 상태 ♥: ${currentStudentLevel}`;
     
     // 난이도 태그 UI 세팅
     const lvlTag = document.getElementById('q-level');
@@ -347,7 +345,7 @@ function handleSlotClick(idx) {
             // 미션 성공 조건: 집 두 채(building two houses) 완공 시 승리 조건 충족
             setTimeout(() => { 
                 if (houses >= 2) { 
-                    alert("🏆 MISSION COMPLETE!\n축하합니다! 아름다운 집 두 채를 모두 완성했습니다! ✨🏡🏡"); 
+                    alert("🏆 MISSION COMPLETE!\n축하합니다! 아름다운 집 두 채를 모두 완성했습니다! ✨🏡🏡 당장 고보현 선생님께 달려가세요! "); 
                 } 
             }, 150);
         } else { 
